@@ -79,6 +79,7 @@ def read(path):
     fid = open(fname, 'rb')
 
   if header['data'] == 'xdr_float':
+    # slow path
     unpacker = xdrlib.Unpacker(fid.read())
     unpacked = unpacker.unpack_farray(size, unpacker.unpack_float)
     raw_data = np.asarray(unpacked, order='F', dtype=ct.c_float)
