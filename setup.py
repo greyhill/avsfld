@@ -6,7 +6,7 @@ setup(
         author = 'Madison McGaffin',
         author_email = 'greyhill@gmail.com',
         packages = [ 'avsfld' ],
-        scripts = [ 'bin/fld_to_le.py' ],
+        scripts = [ 'bin/fld_to_le' ],
         url = 'http://github.com/greyhill/avsfld',
         description = 'Read/write AVS .fld files',
         install_requires = [
