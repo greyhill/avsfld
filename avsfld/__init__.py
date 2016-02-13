@@ -87,6 +87,8 @@ def read(path):
     if sys.byteorder != 'little':
       raise NotImplementedError('byte-swapping not implemented')
     raw_data = np.fromfile(fid, dtype=ct.c_float)
+  elif header['data'] == 'byte':
+    raw_data = np.fromfile(fid, dtype='uint8')
   else:
     raise NotImplementedError('datatype %s not implemented' % header['data'])
 
