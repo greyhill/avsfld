@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
         name = 'avsfld',
-        version = '0.0.1',
+        version = '0.0.2',
         author = 'Madison McGaffin',
         author_email = 'greyhill@gmail.com',
         packages = [ 'avsfld' ],
